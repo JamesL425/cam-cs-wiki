@@ -1,11 +1,23 @@
+
 .features {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   padding: 2rem 0;
   width: 100%;
 }
 
+.feature {
+  background: #2c313c;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 1rem;
 }

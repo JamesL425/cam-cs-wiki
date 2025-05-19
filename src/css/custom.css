@@ -2,9 +2,9 @@
 
 :root {
   /* Typography */
-  --ifm-font-family-base: 'JetBrains Mono', system-ui, monospace;
+  --ifm-font-family-base: 'Inter', system-ui, sans-serif;
   --ifm-font-family-monospace: 'JetBrains Mono', monospace;
-  --ifm-heading-font-family: 'JetBrains Mono', system-ui, monospace;
+  --ifm-heading-font-family: 'Inter', system-ui, sans-serif;
 
   /* Color theming */
   --ifm-color-primary: #00BDB6;       /* Cambridge blue accent (warm blue) */
@@ -13,27 +13,28 @@
 
   /* Layout and spacing */
   --ifm-content-width: 800px;
-  --ifm-font-size-base: 16px;
-  --ifm-line-height-base: 1.6;
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.7;
+  --ifm-background-gradient: linear-gradient(180deg, #363a4d 0%, #2c313c 100%);
 }
 
 /* General body background for a dark sleek look */
 body {
-  background-color: #363a4d;
+  background: var(--ifm-background-gradient);
   color: #f0f0f0;
 }
 
 /* Navbar customization: match dark theme */
 .navbar {
   background-color: #363a4d;
-  box-shadow: none; /* Remove default shadow for a flat look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Increase padding around main content for readability */
 .main-wrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #363a4d;
+  background-color: transparent;
 }
 
 /* Make sure code blocks or inline code have readable font (using default for now) */
