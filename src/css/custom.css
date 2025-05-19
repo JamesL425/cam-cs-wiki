@@ -2,9 +2,9 @@
 
 :root {
   /* Typography */
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  --ifm-font-family-monospace: Menlo, Consolas, Monaco, 'Courier New', monospace;
-  --ifm-heading-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --ifm-font-family-base: 'JetBrains Mono', system-ui, monospace;
+  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
+  --ifm-heading-font-family: 'JetBrains Mono', system-ui, monospace;
 
   /* Color theming */
   --ifm-color-primary: #00BDB6;       /* Cambridge blue accent (warm blue) */
@@ -17,14 +17,15 @@
   --ifm-line-height-base: 1.6;
 }
 
-/* General body background for a gentle off-white look */
+/* General body background for a dark sleek look */
 body {
-  background-color: #f9fafb;
+  background-color: #363a4d;
+  color: #f0f0f0;
 }
 
-/* Navbar customization: make it minimalistic with a light background */
+/* Navbar customization: match dark theme */
 .navbar {
-  background-color: #ffffff;
+  background-color: #363a4d;
   box-shadow: none; /* Remove default shadow for a flat look */
 }
 
@@ -32,6 +33,7 @@ body {
 .main-wrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: #363a4d;
 }
 
 /* Make sure code blocks or inline code have readable font (using default for now) */

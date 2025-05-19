@@ -60,17 +60,17 @@ const config: Config = {
         ],
       },
       footer: {
-        style: 'light',
+        style: 'dark',
         links: [],
         copyright: `© ${new Date().getFullYear()} Cambridge CS Colleges Wiki. Built with Docusaurus.`,
       },
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: 'dark',
         respectPrefersColorScheme: true,
       },
     }),
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
+    'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap',
   ],
 };
 
