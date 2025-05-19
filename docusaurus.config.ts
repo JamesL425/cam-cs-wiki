@@ -70,7 +70,7 @@ const config: Config = {
       },
     }),
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap',
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap',
   ],
 };
 

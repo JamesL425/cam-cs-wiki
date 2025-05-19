@@ -8,8 +8,9 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #00bdb6 0%, #007b8a 100%);
+  background: linear-gradient(135deg, #00bdb6 0%, #00535c 100%);
   color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 996px) {
@@ -22,4 +23,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1.5rem;
 }
