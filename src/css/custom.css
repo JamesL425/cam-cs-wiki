@@ -37,3 +37,9 @@ body {
 }
 
 /* Make sure code blocks or inline code have readable font (using default for now) */
+
+/* Ensure the docs sidebar is scrollable */
+.theme-doc-sidebar-container {
+  overflow-y: auto;
+  max-height: calc(100vh - var(--ifm-navbar-height));
+}
