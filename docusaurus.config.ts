@@ -1,143 +1,77 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+import { Config } from '@docusaurus/types';
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  title: 'Cambridge CS Colleges Wiki',
+  tagline: 'Guide to Computer Science at University of Cambridge, organized by College',
+  url: 'https://USERNAME.github.io', // Your website URL or GitHub Pages URL
+  baseUrl: '/REPO_NAME/', // Base URL for the site; change to '/' for domain root
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  favicon: 'img/favicon.ico', // placeholder favicon path (optional)
+  organizationName: 'USERNAME', // GitHub org/user name.
+  projectName: 'REPO_NAME', // GitHub repo name.
+  deploymentBranch: 'gh-pages', // deployment branch for GitHub Pages
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
-      'classic',
-      {
+      '@docusaurus/preset-classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
-          sidebarPath: './sidebars.ts',
+          path: 'docs',
+          routeBasePath: '/', // serve docs at site's root
+          sidebarPath: require.resolve('./sidebars.ts'),
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/USERNAME/REPO_NAME/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false, // no blog section needed for this wiki
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
-      } satisfies Preset.Options,
+      }),
     ],
   ],
-
-  themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
-    navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+  themeConfig: 
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
+        title: 'Cambridge CS Colleges',
+        logo: {
+          alt: 'Cambridge University Crest',
+          src: 'img/cambridge-crest.png',
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Colleges',
+          },
+          {
+            href: 'https://www.cam.ac.uk',
+            label: 'University Website',
+            position: 'right',
+          },
+        ],
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
+      footer: {
+        style: 'light',
+        links: [],
+        copyright: `© ${new Date().getFullYear()} Cambridge CS Colleges Wiki. Built with Docusaurus.`,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        respectPrefersColorScheme: true,
+      },
+    }),
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
+  ],
 };
 
 export default config;
