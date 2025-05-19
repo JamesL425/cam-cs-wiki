@@ -10,3 +10,4 @@ Trinity is one of the largest colleges in Cambridge and has a strong tradition i
 ## Computer Science
 The college typically admits a sizable cohort of Computer Science students each year. Supervisions are organised by experienced fellows, and there are plenty of opportunities to collaborate with peers from across the university.
 
+

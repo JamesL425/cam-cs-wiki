@@ -43,7 +43,7 @@ const config: Config = {
         title: 'Cambridge CS Colleges',
         logo: {
           alt: 'Cambridge University Crest',
-          src: 'img/cambridge-crest.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
