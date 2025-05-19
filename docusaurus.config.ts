@@ -40,7 +40,7 @@ const config: Config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Cambridge CS Colleges',
+        title: 'Home',
         logo: {
           alt: 'Cambridge University Crest',
           src: 'img/logo.svg',
