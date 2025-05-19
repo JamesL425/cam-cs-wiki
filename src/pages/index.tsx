@@ -18,7 +18,8 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
+          {/* Docs are served from the site root so the intro page lives at /intro */}
+          <Link className="button button--secondary button--lg" to="/intro">
             Browse Colleges
           </Link>
         </div>
