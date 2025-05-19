@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Compare Colleges',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Quickly see how each Cambridge college stacks up for Computer Science,
+        from academic focus to social life.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Student Insights',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Read advice and experiences directly from current and former students to
+        help you decide where you&apos;ll thrive.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Plan Your Journey',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Get tips on admissions and preparing for study so you can make the most
+        of your time at Cambridge.
       </>
     ),
   },
