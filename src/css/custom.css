@@ -30,6 +30,17 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Highlight Home and University Website buttons */
+.navbar__title,
+.navbar__link[href="https://www.cam.ac.uk"] {
+  color: #9CD8D9 !important;
+}
+
+.navbar__title:hover,
+.navbar__link[href="https://www.cam.ac.uk"]:hover {
+  color: #8FACCB !important;
+}
+
 /* Increase padding around main content for readability */
 .main-wrapper {
   padding-top: 2rem;
