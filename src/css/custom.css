@@ -36,6 +36,11 @@ body {
   color: var(--body-text-color);
 }
 
+/* Ensure background color is consistent beyond page height */
+html {
+  background: var(--ifm-background-gradient);
+}
+
 /* Navbar customization: match dark theme */
 .navbar {
   background-color: var(--navbar-bg-color);
