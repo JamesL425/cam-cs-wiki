@@ -21,9 +21,6 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" to="/intro">
             Browse Colleges
           </Link>
-          <Link className="button button--secondary button--lg" to="/three" style={{marginLeft: '1rem'}}>
-            3D Demo
-          </Link>
         </div>
       </div>
     </header>
