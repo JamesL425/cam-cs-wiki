@@ -7,15 +7,15 @@
   --ifm-heading-font-family: 'Inter', system-ui, sans-serif;
 
   /* Color theming */
-  --ifm-color-primary: #00BDB6;       /* Cambridge blue accent (warm blue) */
-  --ifm-color-primary-dark: #00A39E;  /* a slightly darker shade for hover states */
-  --ifm-color-primary-light: #AFF5F2; /* a very light tint for highlights */
+  --ifm-color-primary: #9CD8D9;       /* teal accent */
+  --ifm-color-primary-dark: #8FACCB;  /* slightly darker shade */
+  --ifm-color-primary-light: #817FBC; /* light purple tint */
 
   /* Layout and spacing */
   --ifm-content-width: 800px;
   --ifm-font-size-base: 17px;
   --ifm-line-height-base: 1.7;
-  --ifm-background-gradient: linear-gradient(180deg, #363a4d 0%, #2c313c 100%);
+  --ifm-background-gradient: linear-gradient(180deg, #363a4d 0%, #363a4d 100%);
 }
 
 /* General body background for a dark sleek look */
