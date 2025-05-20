@@ -3,7 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  /* Use only vertical spacing so columns don't overflow and cause a
+     horizontal scrollbar on narrow screens */
+  row-gap: 2rem;
   padding: 2rem 0;
   width: 100%;
 }
